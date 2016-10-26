@@ -1,5 +1,5 @@
 {
-  "name": "k8s",
+  "name": "k8s-es5",
   "version": "0.4.9",
   "author": "junjun16818",
   "description": "Node.js client library for Google's Kubernetes Kubectl And API",
@@ -15,6 +15,7 @@
     "test": "mocha test",
     "build": "webpack",
     "watch": "npm run build -- --watch",
+    "prepublish": "npm run build",
     "start": "webpack --watch"
   },
   "dependencies": {
@@ -24,6 +25,9 @@
   },
   "devDependencies": {
     "@types/node": "^6.0.32",
+    "babel-core": "^6.18.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.18.0",
     "chai": "^3.5.0",
     "concurrently": "^2.0.0",
     "fast-json-patch": "^0.5.7",

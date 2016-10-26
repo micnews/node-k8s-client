@@ -20,7 +20,7 @@ module.exports = {
     target: 'node',
     module: {
         loaders: [
-            { test: /\.ts$/, loader: 'ts-loader' },
+            { test: /\.ts$/, loader: 'babel-loader?presets[]=es2015!ts-loader' },
             { test: /\.json$/, loader: 'json-loader' }
         ]
     },
@@ -29,4 +29,3 @@ module.exports = {
     },
     externals: [nodeModules]
 }
- 
